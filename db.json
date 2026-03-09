@@ -1,0 +1,377 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@example.com",
+      "password": "admin123",
+      "name": "Admin User",
+      "role": "admin",
+      "doctorId": null
+    },
+    {
+      "id": 2,
+      "email": "doctor1@example.com",
+      "password": "password123",
+      "name": "Dr. Smith",
+      "role": "doctor",
+      "doctorId": 1
+    },
+    {
+      "id": 3,
+      "email": "doctor2@example.com",
+      "password": "password456",
+      "name": "Dr. Johnson",
+      "role": "doctor",
+      "doctorId": 2
+    },
+    {
+      "email": "salam@yopmail.com",
+      "password": "1qazZAQ!",
+      "name": "salam",
+      "role": "admin",
+      "doctorId": null,
+      "id": 4
+    }
+  ],
+  "clinics": [
+    {
+      "id": 1,
+      "name": "Central Medical Clinic",
+      "address": "123 Main St, City, State 12345",
+      "phone": "(555) 123-4567",
+      "email": "info@centralclinic.com"
+    },
+    {
+      "id": 2,
+      "name": "Westside Health Center",
+      "address": "456 Oak Ave, City, State 12345",
+      "phone": "(555) 987-6543",
+      "email": "contact@westsideclinic.com"
+    }
+  ],
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr. Md. Rahman",
+      "photo": "doctor1.jpg",
+      "gender": "Male",
+      "qualification": "MBBS, MD (Cardiology), FCPS",
+      "specialization": "Cardiologist",
+      "bmdcNumber": "A12345",
+      "experience": 15,
+      "currentPosition": "Assistant Professor",
+      "hospital": "Dhaka Medical College Hospital",
+      "chamberName": "Popular Diagnostic Center",
+      "chamberAddress": "Dhanmondi, Dhaka",
+      "chamberDays": [
+        "Sat",
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed"
+      ],
+      "chamberTime": "5:00 PM - 9:00 PM",
+      "consultationFee": 800,
+      "phone": "01711111111"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Farzana Akter",
+      "photo": "doctor2.jpg",
+      "gender": "Female",
+      "qualification": "MBBS, FCPS (Medicine)",
+      "specialization": "Internal Medicine",
+      "bmdcNumber": "B67890",
+      "experience": 10,
+      "currentPosition": "Consultant",
+      "hospital": "Square Hospital",
+      "chamberName": "Labaid Diagnostic",
+      "chamberAddress": "Uttara, Dhaka",
+      "chamberDays": [
+        "Sun",
+        "Mon",
+        "Wed",
+        "Thu"
+      ],
+      "chamberTime": "6:00 PM - 10:00 PM",
+      "consultationFee": 1000,
+      "phone": "01722222222"
+    }
+  ],
+  "patients": [
+    {
+      "id": 1,
+      "name": "Md. Rahim Uddin",
+      "gender": "Male",
+      "age": 39,
+      "dob": "1985-05-15",
+      "phone": "01712345678",
+      "email": "rahim.uddin@email.com",
+      "address": "Chandpur, Chittagong, Bangladesh",
+      "bloodGroup": "B+",
+      "weight": "72",
+      "height": "5.7",
+      "allergies": "Penicillin",
+      "chronicDisease": "Type 2 Diabetes",
+      "emergencyContactName": "Fatema Akter",
+      "emergencyPhone": "01812345678",
+      "relationship": "Wife",
+      "doctorId": 1
+    },
+    {
+      "id": 2,
+      "name": "Aisha Begum",
+      "gender": "Female",
+      "age": 34,
+      "dob": "1990-08-22",
+      "phone": "01823456789",
+      "email": "aisha.begum@email.com",
+      "address": "Mirpur-10, Dhaka, Bangladesh",
+      "bloodGroup": "A+",
+      "weight": "58",
+      "height": "5.3",
+      "allergies": "None",
+      "chronicDisease": "None",
+      "emergencyContactName": "Karim Ahmed",
+      "emergencyPhone": "01923456789",
+      "relationship": "Husband",
+      "doctorId": 1
+    },
+    {
+      "id": 3,
+      "name": "Abdul Kadir",
+      "gender": "Male",
+      "age": 46,
+      "dob": "1978-12-10",
+      "phone": "01634567890",
+      "email": "",
+      "address": "Uttara, Dhaka, Bangladesh",
+      "bloodGroup": "O+",
+      "weight": "85",
+      "height": "5.9",
+      "allergies": "Sulfa drugs",
+      "chronicDisease": "Hypertension",
+      "emergencyContactName": "Shahana Kadir",
+      "emergencyPhone": "01734567890",
+      "relationship": "Wife",
+      "doctorId": 2
+    }
+  ],
+  "medications": [
+    {
+      "id": 1,
+      "medicineName": "Napa",
+      "genericName": "Paracetamol",
+      "type": "Tablet",
+      "strength": "500 mg",
+      "dose": "1+0+1",
+      "duration": "5 Days",
+      "foodRelation": "After Food",
+      "instructions": "Drink plenty of water"
+    },
+    {
+      "id": 2,
+      "medicineName": "Seclo",
+      "genericName": "Omeprazole",
+      "type": "Capsule",
+      "strength": "20 mg",
+      "dose": "1+0+0",
+      "duration": "14 Days",
+      "foodRelation": "Before Food",
+      "instructions": "Take 30 minutes before breakfast"
+    },
+    {
+      "id": 3,
+      "medicineName": "Azith",
+      "genericName": "Azithromycin",
+      "type": "Tablet",
+      "strength": "500 mg",
+      "dose": "1+0+0",
+      "duration": "3 Days",
+      "foodRelation": "After Food",
+      "instructions": "Complete full course"
+    },
+    {
+      "id": 4,
+      "medicineName": "Glucoz",
+      "genericName": "Metformin",
+      "type": "Tablet",
+      "strength": "500 mg",
+      "dose": "1+0+1",
+      "duration": "30 Days",
+      "foodRelation": "After Food",
+      "instructions": "Monitor blood sugar regularly"
+    },
+    {
+      "id": 5,
+      "medicineName": "Amdocal",
+      "genericName": "Amlodipine",
+      "type": "Tablet",
+      "strength": "5 mg"
+    }
+  ],
+  "prescriptions": [
+    {
+      "id": 1,
+      "patientId": 1,
+      "doctorId": 1,
+      "date": "2026-03-05",
+      "notes": "Patient advised to rest and follow medication schedule",
+      "items": [
+        {
+          "id": 1,
+          "medicationId": 1,
+          "dosage": "500mg",
+          "frequency": "Twice daily",
+          "duration": "7 days"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "patientId": 2,
+      "doctorId": 1,
+      "date": "2026-03-04",
+      "notes": "Regular checkup prescription",
+      "items": [
+        {
+          "id": 1,
+          "medicationId": 2,
+          "dosage": "400mg",
+          "frequency": "Three times daily",
+          "duration": "5 days"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "patientId": 3,
+      "doctorId": 2,
+      "date": "2026-03-03",
+      "notes": "Cardiac medication",
+      "items": [
+        {
+          "id": 1,
+          "medicationId": 5,
+          "dosage": "10mg",
+          "frequency": "Once daily",
+          "duration": "30 days"
+        }
+      ]
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "patientId": 1,
+      "patientName": "Ahmed Hassan",
+      "phone": "01711111111",
+      "date": "2026-03-08",
+      "time": "10:00 AM",
+      "status": "scheduled",
+      "doctorId": 1
+    },
+    {
+      "id": 2,
+      "patientId": 2,
+      "patientName": "Fatima Khan",
+      "phone": "01722222222",
+      "date": "2026-03-08",
+      "time": "11:30 AM",
+      "status": "scheduled",
+      "doctorId": 1
+    },
+    {
+      "id": 3,
+      "patientId": 3,
+      "patientName": "Rahim Uddin",
+      "phone": "01733333333",
+      "date": "2026-03-08",
+      "time": "2:00 PM",
+      "status": "scheduled",
+      "doctorId": 1
+    },
+    {
+      "id": 4,
+      "patientId": 1,
+      "patientName": "Ahmed Hassan",
+      "phone": "01711111111",
+      "date": "2026-03-10",
+      "time": "10:00 AM",
+      "status": "scheduled",
+      "doctorId": 1
+    },
+    {
+      "id": 5,
+      "patientId": 4,
+      "patientName": "Nusrat Jahan",
+      "phone": "01744444444",
+      "date": "2026-03-12",
+      "time": "4:00 PM",
+      "status": "scheduled",
+      "doctorId": 2
+    }
+  ],
+  "labTests": [
+    {
+      "id": 1,
+      "name": "Complete Blood Count (CBC)",
+      "description": "Measures different components of blood including RBC, WBC, platelets",
+      "category": "Hematology"
+    },
+    {
+      "id": 2,
+      "name": "Lipid Profile",
+      "description": "Measures cholesterol and triglyceride levels",
+      "category": "Biochemistry"
+    },
+    {
+      "id": 3,
+      "name": "Liver Function Test (LFT)",
+      "description": "Evaluates liver health through various enzyme measurements",
+      "category": "Biochemistry"
+    },
+    {
+      "id": 4,
+      "name": "Kidney Function Test (KFT)",
+      "description": "Assesses kidney function through creatinine and urea levels",
+      "category": "Biochemistry"
+    },
+    {
+      "id": 5,
+      "name": "Thyroid Profile (T3, T4, TSH)",
+      "description": "Measures thyroid hormone levels",
+      "category": "Endocrinology"
+    },
+    {
+      "id": 6,
+      "name": "HbA1c (Glycated Hemoglobin)",
+      "description": "Measures average blood glucose levels over 3 months",
+      "category": "Diabetes"
+    },
+    {
+      "id": 7,
+      "name": "Chest X-Ray",
+      "description": "Radiographic examination of chest and lungs",
+      "category": "Radiology"
+    },
+    {
+      "id": 8,
+      "name": "ECG (Electrocardiogram)",
+      "description": "Records electrical activity of the heart",
+      "category": "Cardiology"
+    },
+    {
+      "id": 9,
+      "name": "Urine Routine Examination",
+      "description": "Analyzes urine for various parameters",
+      "category": "Clinical Pathology"
+    },
+    {
+      "id": 10,
+      "name": "Fasting Blood Sugar (FBS)",
+      "description": "Measures blood glucose level after fasting",
+      "category": "Diabetes"
+    }
+  ]
+}
